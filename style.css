@@ -1,193 +1,700 @@
-.faixa-laranja{
-    background: linear-gradient(90deg, #d66940 0%, #ffb347 100%);
-    width: 80vw;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    border-bottom-left-radius: 2rem;
-    border-bottom-right-radius: 2rem;
+/* ====== Section: Valores e FAQ ====== */
+.section-valores-faq {
+  width: 100vw;
+  background: #fff6f2;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 3.5rem 0 2.5rem 0;
 }
-.faixa-laranja p{
-    color: #fff;
-    font-size: 3rem;
-     font-family: "Bricolage Grotesque", sans-serif;
-     text-align: center;
+.valores-faq-container {
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+}
+.valores-faq-titulo {
+  font-size: 1.45rem;
+  color: #333;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+.valores-faq-opcoes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem 1.2rem;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+.valor-btn {
+  font-size: 1.25rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 1.2rem;
+  padding: 1.1rem 0.5rem 0.8rem 0.5rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px 0 rgba(67, 170, 220, 0.1);
+  transition: filter 0.2s;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  background: linear-gradient(90deg, #05e982 0%, #43aadc 100%);
+  margin: 0;
+}
+.valor-btn-azul {
+  background: linear-gradient(90deg, #43aadc 0%, #7fd6f6 100%);
+}
+.valor-btn-verde {
+  background: linear-gradient(90deg, #05e982 0%, #43aadc 100%);
+}
+.valor-btn span {
+  font-size: 1rem;
+  font-weight: 400;
+  display: block;
+}
+.valor-btn:hover {
+  filter: brightness(0.95);
+}
+.faq-card {
+  background: #ff8d63;
+  border-radius: 2rem;
+  box-shadow: 0 4px 32px 0 rgba(255, 141, 99, 0.1);
+  padding: 2.2rem 2.2rem 2.2rem 2.2rem;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  min-height: 340px;
+  margin-top: 1.2rem;
+  overflow: visible;
+}
+.faq-card-content {
+  flex: 1 1 0;
+  z-index: 2;
+  text-align: left;
+  padding-right: 240px;
+  box-sizing: border-box;
+}
+.faq-card-content h3 {
+  color: #fff;
+  font-size: 2rem;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+}
+.faq-pergunta {
+  color: #fff;
+  font-size: 1.05rem;
+  margin-bottom: 1.1rem;
+}
+.faq-pergunta b {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.08rem;
+}
+.faq-botao-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 1.5rem;
+}
+.faq-botao {
+  font-size: 1.2rem;
+  font-weight: 600;
+  background: linear-gradient(90deg, #05e982 0%, #43aadc 100%);
+  color: #fff;
+  border: none;
+  border-radius: 1rem;
+  padding: 1.1rem 2.2rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px 0 rgba(67, 170, 220, 0.1);
+  transition: filter 0.2s;
+  margin-top: 0.5rem;
+  width: 100%;
+  max-width: 220px;
+  letter-spacing: 0.01em;
+}
+.faq-botao:hover {
+  filter: brightness(0.95);
+}
+.faq-img {
+  position: absolute;
+  right: -70px;
+  bottom: -40px;
+  width: 500px;
+  height: auto;
+  border-radius: 2rem;
+  z-index: 3;
+  object-fit: cover;
+  box-shadow: 0 6px 32px 0 rgba(67, 170, 220, 0.1);
+  background: none;
+  pointer-events: none;
+}
+.faq-card-ornament {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+  background: none;
+}
+.faq-card-ornament::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: url('data:image/svg+xml;utf8,<svg width="100%25" height="100%25" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 60C60 120 120 40 180 80C240 120 320 200 380 120" stroke="%23fff6f2" stroke-width="4" fill="none"/><path d="M40 200C100 260 200 180 260 220C320 260 360 220 380 200" stroke="%23fff6f2" stroke-width="3" fill="none"/></svg>');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.2;
 }
 
-body{
-    margin: 0;
-    padding: 0;
-     font-family: "Bricolage Grotesque", sans-serif;
-}
-
-.container-text1{
-    margin-left: 15vw;
-    font-size: 3rem;
-}
-
-.container-text1 p{
-    color: #d66940;
-}
-
-.container-text1 b{
-    color: #000;
-}
-
-.container-image1 img{
-    width: 600px;
-    height: auto;
+@media (max-width: 700px) {
+  .section-valores-faq {
+    padding: 1.5rem 0 1rem 0;
+  }
+  .valores-faq-container {
+    max-width: 99vw;
+    gap: 1.2rem;
+  }
+  .valores-faq-opcoes {
+    grid-template-columns: 1fr;
+    gap: 0.7rem;
+    max-width: 98vw;
+  }
+  .faq-card {
+    flex-direction: column;
+    padding: 1.1rem 0.5rem 1.1rem 0.5rem;
+    max-width: 98vw;
+    min-height: 320px;
+    position: relative;
+  }
+  .faq-card-content {
+    padding-right: 0;
+  }
+  .faq-card-content h3 {
+    font-size: 1.2rem;
+  }
+  .faq-img {
+    position: static;
+    width: 180px;
+    margin: 0 auto 0.5rem auto;
     display: block;
-    margin: 0 auto;
-    margin-top: -15rem;
-    margin-right: 3rem;
-    border-radius: 1rem;
+    right: unset;
+    bottom: unset;
+    border-radius: 1.2rem;
+    box-shadow: 0 2px 12px 0 rgba(67, 170, 220, 0.1);
+    background: none;
+  }
+}
+/* ====== Section: Na terapia você vai ====== */
+.section-terapia-vai {
+  width: 100vw;
+  background: #fff6f2;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 4rem 0 3rem 0;
+}
+.terapia-vai-container {
+  width: 100%;
+  max-width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+}
+.terapia-vai-img-texto {
+  display: flex;
+  align-items: flex-start;
+  gap: 2.5rem;
+  width: 100%;
+}
+.terapia-vai-texto {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.terapia-vai-texto h2 {
+  font-size: 2rem;
+  color: #333;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 400;
+  margin-bottom: 1.2rem;
+}
+.terapia-vai-card {
+  background: #ff8d63;
+  border-radius: 1.5rem;
+  padding: 1.3rem 1.5rem 1.1rem 1.5rem;
+  color: #fff;
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 2px 12px 0 rgba(255, 141, 99, 0.08);
+  width: 100%;
+}
+.terapia-vai-card ul {
+  list-style: disc inside;
+  margin: 0;
+  padding: 0 0 0 0.5rem;
+}
+.terapia-vai-card ul li {
+  margin-bottom: 0.7rem;
+  font-size: 1.08rem;
+  color: #fff;
+}
+.terapia-vai-img {
+  width: 32rem;
+  height: auto;
+  border-radius: 1.2rem;
+  object-fit: cover;
+  margin-top: -1.2rem;
+  margin-right: 2.5rem;
+}
+.terapia-vai-processo {
+  width: 100%;
+  padding: 1rem;
+  margin: 0 auto;
+  margin-bottom: 0.5rem;
+  margin-top: -15rem;
+  background-color: #fff;
+  border-radius: 1rem;
+}
+.terapia-vai-processo h3 {
+  font-size: 1.45rem;
+  color: #333;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 500;
+  margin-bottom: 1.1rem;
+  text-align: left;
+}
+.terapia-vai-processo ul {
+  list-style: disc inside;
+  padding: 0 0 0 0.5rem;
+  margin: 0;
+}
+.terapia-vai-processo ul li {
+  color: #333;
+  font-size: 1.08rem;
+  margin-bottom: 1.1rem;
+  line-height: 1.6;
+}
+.terapia-vai-processo ul li b {
+  color: #ff8d63;
+  font-weight: 600;
+}
+.terapia-vai-card-preco {
+  background: #ff8d63;
+  border-radius: 1.5rem;
+  padding: 1.2rem 1.5rem 1.1rem 1.5rem;
+  color: #fff;
+  width: 100%;
+  max-width: 430px;
+  margin: 0 auto;
+  margin-top: 1.2rem;
+  box-shadow: 0 2px 12px 0 rgba(255, 141, 99, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
+}
+.terapia-vai-card-preco-titulo {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.terapia-vai-card-preco-desc {
+  background: #fff6f2;
+  color: #ff8d63;
+  border-radius: 0.8rem;
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  text-align: center;
+  width: 100%;
+  margin-top: 0.2rem;
 }
 
-.container-iframeytb{
-    margin: 0 auto;
-    width: 500px;
-    height: 250px;
-    margin-top: -40rem;
-    margin-left: 4rem;
-    border-radius: 1rem;
-    text-align: center;
-      background: linear-gradient(90deg, #d66940 0%, #ffb347 100%);
-}
-
-.container-iframeytb p{
-    color: #fff;
-}
-
-.container-iframeytb iframe{
-    width: 80%;
-    height: 70%;
-}
-
-.container-button-queroagendar{
-    display: flex;
-    justify-content: center;
+@media (max-width: 700px) {
+  .section-terapia-vai {
+    padding: 2rem 0 1.2rem 0;
+  }
+  .terapia-vai-container {
+    max-width: 99vw;
+    gap: 1.2rem;
+  }
+  .terapia-vai-img-texto {
+    flex-direction: column-reverse;
     align-items: center;
-    margin-top: 10rem;
+    gap: 0.7rem;
+  }
+  .terapia-vai-img {
+    width: 120px;
+    margin-top: 0;
+    margin-right: 0;
+  }
+  .terapia-vai-card,
+  .terapia-vai-card-preco {
+    max-width: 98vw;
+    padding: 1rem 0.5rem 1rem 0.5rem;
+  }
+  .terapia-vai-texto h2 {
+    font-size: 1.1rem;
+  }
+  .terapia-vai-processo h3 {
+    font-size: 1rem;
+  }
+  .terapia-vai-processo ul li,
+  .terapia-vai-card ul li {
+    font-size: 0.95rem;
+  }
+  .terapia-vai-card-preco-titulo {
+    font-size: 0.98rem;
+  }
+  .terapia-vai-card-preco-desc {
+    font-size: 0.92rem;
+    padding: 0.5rem 0.3rem;
+  }
+}
+/* ====== Sinais de que você precisa de terapia ====== */
+.section-sinais-terapia {
+  width: 100vw;
+  min-height: 100vh;
+  background: radial-gradient(ellipse at top right, #4b7c6c 0%, #35706a 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0 2rem 0;
+  margin-top: 2rem;
 }
 
-.container-button-queroagendar button{
-    font-size: 2rem;
-    background: linear-gradient(90deg, #05e982 0%, #43aadc 100%);
-    color: #fff;
-    border: none;
-    border-radius: 1.5rem;
-    padding: 1rem 2.5rem;
-    cursor: pointer;
-    box-shadow: 0 2px 8px 0 rgba(63,69,81,0.10);
-    transition: filter 0.2s;
-    width: fit-content;
+.card-sinais {
+  background: #fff;
+  border-radius: 2rem;
+  box-shadow: 0 4px 32px 0 rgba(67, 170, 220, 0.1);
+  padding: 2.5rem 2.2rem 2.2rem 2.2rem;
+  max-width: 410px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-sinais-header {
+  font-size: 2rem;
+  color: #4b7c6c;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 400;
+}
+.terapia-destaque {
+  color: #ff8d63;
+  font-weight: 600;
+}
+
+.card-sinais-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2.2rem 0;
+  width: 100%;
+}
+.card-sinais-lista li {
+  color: #35706a;
+  font-size: 1.15rem;
+  margin-bottom: 0.85rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  font-family: "Bricolage Grotesque", sans-serif;
+  position: relative;
+  padding-left: 2rem;
+}
+.card-sinais-lista li::before {
+  content: "\2714";
+  color: #fff;
+  background: linear-gradient(90deg, #05e982 0%, #43aadc 100%);
+  border-radius: 50%;
+  width: 1.3rem;
+  height: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  position: absolute;
+  left: 0;
+  top: 0.1rem;
+  box-shadow: 0 2px 8px 0 rgba(67, 170, 220, 0.1);
+}
+
+.card-sinais-botao-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.card-sinais-botao {
+  font-size: 2rem;
+  font-weight: 600;
+  background: linear-gradient(90deg, #05e982 0%, #43aadc 100%);
+  color: #fff;
+  border: none;
+  border-radius: 1rem;
+  padding: 1.1rem 2.2rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px 0 rgba(67, 170, 220, 0.1);
+  transition: filter 0.2s;
+  margin-top: 0.5rem;
+  width: 100%;
+  letter-spacing: 0.01em;
+}
+.card-sinais-botao:hover {
+  filter: brightness(0.95);
+}
+
+@media (max-width: 700px) {
+  .section-sinais-terapia {
+    padding: 2rem 0 1rem 0;
+    min-height: unset;
+  }
+  .card-sinais {
+    padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+    max-width: 98vw;
+  }
+  .card-sinais-header {
+    font-size: 1.2rem;
+    margin-bottom: 1.2rem;
+  }
+  .card-sinais-lista li {
+    font-size: 0.98rem;
+    padding-left: 1.7rem;
+  }
+  .card-sinais-botao {
+    font-size: 1rem;
+    padding: 0.8rem 0.5rem;
+  }
+}
+.faixa-laranja {
+  background: linear-gradient(90deg, #d66940 0%, #ffb347 100%);
+  width: 80vw;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+.faixa-laranja p {
+  color: #fff;
+  font-size: 3rem;
+  font-family: "Bricolage Grotesque", sans-serif;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.container-text1 {
+  margin-left: 15vw;
+  font-size: 3rem;
+}
+
+.container-text1 p {
+  color: #d66940;
+}
+
+.container-text1 b {
+  color: #000;
+}
+
+.container-image1 img {
+  width: 600px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  margin-top: -15rem;
+  margin-right: 3rem;
+  border-radius: 1rem;
+}
+
+.container-iframeytb {
+  margin: 0 auto;
+  width: 500px;
+  height: 250px;
+  margin-top: -40rem;
+  margin-left: 4rem;
+  border-radius: 1rem;
+  text-align: center;
+  background: linear-gradient(90deg, #d66940 0%, #ffb347 100%);
+}
+
+.container-iframeytb p {
+  color: #fff;
+}
+
+.container-iframeytb iframe {
+  width: 80%;
+  height: 70%;
+}
+
+.container-button-queroagendar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+}
+
+.container-button-queroagendar button {
+  font-size: 2rem;
+  background: linear-gradient(90deg, #05e982 0%, #43aadc 100%);
+  color: #fff;
+  border: none;
+  border-radius: 1.5rem;
+  padding: 1rem 2.5rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.1);
+  transition: filter 0.2s;
+  width: fit-content;
+  margin-top: -2rem;
 }
 .container-button-queroagendar:hover {
-    filter: brightness(0.95);
+  filter: brightness(0.95);
 }
 
-.section2{
-    background-color: #d66940;
-    margin-top: 10rem;
-    padding-bottom: 2rem;
+.section2 {
+  background-color: #d66940;
+  margin-top: 10rem;
+  padding-bottom: 2rem;
 }
 
-.container-elogios{
-    margin: 0 auto;
-    margin-top: 10rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+.container-elogios {
+  margin: 0 auto;
+  margin-top: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.container-elogios h2{
-    color: #fff;
-    font-size: 2rem;
+.container-elogios h2 {
+  color: #fff;
+  font-size: 2rem;
 }
-.container-elogios-images{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
+.container-elogios-images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
 }
 
-.container-elogios-images img{
-    border-radius: 1rem;
+.container-elogios-images img {
+  border-radius: 1rem;
 }
 
 .section-porque-escolher {
-    max-width: 80vw;
-    margin: 4rem auto 3rem auto;
-    padding: 2.5rem 2rem;
-    border-radius: 2rem;
-    box-shadow: 0 2px 16px 0 rgba(67,170,220,0.08);
-    text-align: center;
+  max-width: 80vw;
+  margin: 4rem auto 3rem auto;
+  padding: 2.5rem 2rem;
+  border-radius: 2rem;
+  box-shadow: 0 2px 16px 0 rgba(67, 170, 220, 0.08);
+  text-align: center;
 }
 .section-porque-escolher h2 {
-    color: #ff8d63;
-    font-size: 2.2rem;
-    margin-bottom: 1.5rem;
-    font-family: "Bricolage Grotesque", sans-serif;
-    font-weight: 700;
+  color: #ff8d63;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  font-family: "Bricolage Grotesque", sans-serif;
+  font-weight: 700;
 }
 .section-porque-escolher p {
-    color: #333;
-    font-size: 1.25rem;
-    line-height: 1.7;
-    margin-bottom: 1.2rem;
-    font-family: "Bricolage Grotesque", sans-serif;
-    text-align: justify;
+  color: #333;
+  font-size: 1.25rem;
+  line-height: 1.7;
+  margin-bottom: 1.2rem;
+  font-family: "Bricolage Grotesque", sans-serif;
+  text-align: justify;
 }
 .porque-escolher-img-texto {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 1.5rem;
 }
 .porque-escolher-img-texto p {
-    flex: 1;
-    margin-bottom: 0;
-    text-align: left;
+  flex: 1;
+  margin-bottom: 0;
+  text-align: left;
 }
 .img-loucura {
-    width: 200px;
-    height: auto;
-    border-radius: 1rem;
-    box-shadow: 0 2px 8px 0 rgba(67,170,220,0.10);
+  width: 200px;
+  height: auto;
 }
 .porque-escolher-img-bg {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 2rem 0 1.5rem 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0 1.5rem 0;
 }
 .porque-escolher-img-bg p {
-    position: relative;
-    z-index: 2;
-    background: rgba(255,255,255,0.92);
-    border-radius: 1.2rem;
-    padding: 1.5rem 2rem;
-    box-shadow: 0 2px 16px 0 rgba(67,170,220,0.08);
-    font-size: 1.25rem;
-    line-height: 1.7;
-    margin: 0;
+  position: relative;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 1.2rem;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 2px 16px 0 rgba(67, 170, 220, 0.08);
+  font-size: 1.25rem;
+  line-height: 1.7;
+  margin: 0;
 }
 .img-loucura-bg {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-60%, -50%) scale(1.1);
-    opacity: 0.45;
-    z-index: 1;
-    width: 220px;
-    height: auto;
-    pointer-events: none;
-    filter: blur(0.5px) drop-shadow(0 2px 8px #43aadc22);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-60%, -50%) scale(1.1);
+  opacity: 0.45;
+  z-index: 1;
+  width: 220px;
+  height: auto;
+  pointer-events: none;
+  filter: blur(0.5px) drop-shadow(0 2px 8px #43aadc22);
 }
+
+.section-mulher-triste {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+.section-mulher-triste img {
+  width: 100%;
+  height: auto;
+}
+
+.section-mulher-triste div {
+  margin: 0;
+  background-color: #f0f0f0;
+  color: #ff8d63;
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-top: 2rem;
+}
+
 @media (max-width: 700px) {
   .porque-escolher-img-texto {
     flex-direction: column;
