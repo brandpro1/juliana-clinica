@@ -55,9 +55,7 @@
   font-weight: 400;
   display: block;
 }
-.valor-btn:hover {
-  filter: brightness(0.95);
-}
+
 .faq-card {
   background: #ff8d63;
   border-radius: 2rem;
@@ -117,9 +115,7 @@
   max-width: 220px;
   letter-spacing: 0.01em;
 }
-.faq-botao:hover {
-  filter: brightness(0.95);
-}
+
 .faq-img {
   position: absolute;
   right: -70px;
@@ -376,9 +372,6 @@
   width: 100%;
   letter-spacing: 0.01em;
 }
-.card-sinais-botao:hover {
-  filter: brightness(0.95);
-}
 
 .faixa-laranja {
   background: linear-gradient(90deg, #d66940 0%, #ffb347 100%);
@@ -467,9 +460,6 @@ body {
   width: fit-content;
   margin-top: -2rem;
 }
-.container-button-queroagendar:hover {
-  filter: brightness(0.95);
-}
 
 .section2 {
   background-color: #d66940;
@@ -498,6 +488,7 @@ body {
 
 .container-elogios-images img {
   border-radius: 1rem;
+  width: 350px;
 }
 
 .section-porque-escolher {
