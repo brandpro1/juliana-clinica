@@ -156,44 +156,6 @@
   opacity: 0.2;
 }
 
-@media (max-width: 700px) {
-  .section-valores-faq {
-    padding: 1.5rem 0 1rem 0;
-  }
-  .valores-faq-container {
-    max-width: 99vw;
-    gap: 1.2rem;
-  }
-  .valores-faq-opcoes {
-    grid-template-columns: 1fr;
-    gap: 0.7rem;
-    max-width: 98vw;
-  }
-  .faq-card {
-    flex-direction: column;
-    padding: 1.1rem 0.5rem 1.1rem 0.5rem;
-    max-width: 98vw;
-    min-height: 320px;
-    position: relative;
-  }
-  .faq-card-content {
-    padding-right: 0;
-  }
-  .faq-card-content h3 {
-    font-size: 1.2rem;
-  }
-  .faq-img {
-    position: static;
-    width: 180px;
-    margin: 0 auto 0.5rem auto;
-    display: block;
-    right: unset;
-    bottom: unset;
-    border-radius: 1.2rem;
-    box-shadow: 0 2px 12px 0 rgba(67, 170, 220, 0.1);
-    background: none;
-  }
-}
 /* ====== Section: Na terapia você vai ====== */
 .section-terapia-vai {
   width: 100vw;
@@ -323,47 +285,6 @@
   margin-top: 0.2rem;
 }
 
-@media (max-width: 700px) {
-  .section-terapia-vai {
-    padding: 2rem 0 1.2rem 0;
-  }
-  .terapia-vai-container {
-    max-width: 99vw;
-    gap: 1.2rem;
-  }
-  .terapia-vai-img-texto {
-    flex-direction: column-reverse;
-    align-items: center;
-    gap: 0.7rem;
-  }
-  .terapia-vai-img {
-    width: 120px;
-    margin-top: 0;
-    margin-right: 0;
-  }
-  .terapia-vai-card,
-  .terapia-vai-card-preco {
-    max-width: 98vw;
-    padding: 1rem 0.5rem 1rem 0.5rem;
-  }
-  .terapia-vai-texto h2 {
-    font-size: 1.1rem;
-  }
-  .terapia-vai-processo h3 {
-    font-size: 1rem;
-  }
-  .terapia-vai-processo ul li,
-  .terapia-vai-card ul li {
-    font-size: 0.95rem;
-  }
-  .terapia-vai-card-preco-titulo {
-    font-size: 0.98rem;
-  }
-  .terapia-vai-card-preco-desc {
-    font-size: 0.92rem;
-    padding: 0.5rem 0.3rem;
-  }
-}
 /* ====== Sinais de que você precisa de terapia ====== */
 .section-sinais-terapia {
   width: 100vw;
@@ -459,28 +380,6 @@
   filter: brightness(0.95);
 }
 
-@media (max-width: 700px) {
-  .section-sinais-terapia {
-    padding: 2rem 0 1rem 0;
-    min-height: unset;
-  }
-  .card-sinais {
-    padding: 1.2rem 0.5rem 1.2rem 0.5rem;
-    max-width: 98vw;
-  }
-  .card-sinais-header {
-    font-size: 1.2rem;
-    margin-bottom: 1.2rem;
-  }
-  .card-sinais-lista li {
-    font-size: 0.98rem;
-    padding-left: 1.7rem;
-  }
-  .card-sinais-botao {
-    font-size: 1rem;
-    padding: 0.8rem 0.5rem;
-  }
-}
 .faixa-laranja {
   background: linear-gradient(90deg, #d66940 0%, #ffb347 100%);
   width: 80vw;
@@ -696,22 +595,130 @@ body {
 }
 
 @media (max-width: 700px) {
-  .porque-escolher-img-texto {
+  header {
+    display: flex;
     flex-direction: column;
-    gap: 1rem;
+    align-items: center;
+    justify-content: center;
   }
-  .porque-escolher-img-texto p {
+
+  .section-mulher-triste div {
+    padding: 1rem;
+  }
+
+  .section-mulher-triste img {
+    width: 90vw;
+    margin: 0 auto;
+  }
+
+  .container-text1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 0;
+  }
+  .container-image1 img {
+    width: 80vw !important;
+    margin: 0;
+  }
+
+  .container-iframeytb {
+    margin: 0;
+    width: 90vw;
+  }
+
+  .section2 {
+    margin: 0;
+  }
+
+  .container-elogios {
+    margin: 2rem auto;
     text-align: center;
   }
-  .img-loucura {
-    width: 80px;
+
+  .container-elogios-images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90vw;
   }
-  .img-loucura-bg {
-    width: 120px;
-    transform: translate(-60%, -50%) scale(0.9);
+
+  .container-elogios-images img {
+    width: 100%;
+    height: auto;
   }
-  .porque-escolher-img-bg p {
-    padding: 1rem 0.7rem;
-    font-size: 1.05rem;
+
+  .porque-escolher-img-texto {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-mulher-triste {
+    width: 100vw;
+    margin: 0 auto;
+  }
+
+  .terapia-vai-img-texto {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .terapia-vai-img {
+    width: 90vw;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .terapia-vai-card {
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .valores-faq-opcoes,
+  .faq-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .faq-card,
+  .terapia-vai-card {
+    width: 70vw;
+  }
+
+  .faq-card-content {
+    padding: 0;
+    margin: 0;
+    padding-right: 0;
+  }
+
+  .faq-img {
+    width: 90vw;
+    position: initial;
+  }
+
+  .section-terapia-vai {
+    width: 100vw;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .porque-escolher-img-texto p {
+    width: 90vw;
+    max-width: 100%;
+  }
+
+  .terapia-vai-processo {
+    padding: 1rem;
+    margin: 0;
+    margin-top: -10rem;
+  }
+
+  .terapia-vai-img-texto {
+    gap: 0;
   }
 }
