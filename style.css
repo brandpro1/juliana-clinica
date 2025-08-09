@@ -585,6 +585,11 @@ body {
   margin-top: 2rem;
 }
 
+.button-te-esperamos-na-sua-sessao {
+  display: none;
+  overflow: hidden;
+}
+
 @media (max-width: 700px) {
   header {
     display: flex;
@@ -711,5 +716,26 @@ body {
 
   .terapia-vai-img-texto {
     gap: 0;
+  }
+
+  .button-te-esperamos-na-sua-sessao {
+    display: block;
+    overflow: visible;
+    width: 100%;
+    margin-top: -6rem;
+    z-index: 1000;
+  }
+
+  .button-te-esperamos-na-sua-sessao button {
+    font-size: 1rem;
+    background: linear-gradient(90deg, #05e982 0%, #43aadc 100%);
+    color: #fff;
+    border: none;
+    border-radius: 1.5rem;
+    padding: 1.5rem 2.5rem;
+    cursor: pointer;
+    box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.1);
+    transition: filter 0.2s;
+    width: fit-content;
   }
 }
