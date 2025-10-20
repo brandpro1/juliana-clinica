@@ -24,7 +24,7 @@
 }
 .valores-faq-opcoes {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 1.2rem 1.2rem;
   width: 100%;
   margin-bottom: 1.5rem;
